@@ -5,7 +5,8 @@ Updated: 2026-10-05
 ## GitHub workflow preference
 
 - User wants the complete website source pushed to their GitHub account and future changes committed and pushed when explicitly requested. Preserve exclusions for credentials, local databases, dependencies, and generated files.
-- GitHub destination: `https://github.com/nikssalian-lgtm/LOGICSPHERE-INC` (public). User authorized initial source upload and future pushes when requested. Initial upload is pending setup/authentication; verify remote state before claiming completion.
+- GitHub destination: `https://github.com/nikssalian-lgtm/LOGICSPHERE-INC` (public). Initial source commit `094a602` pushed successfully on 2026-10-05. Branch `main` tracks `origin/main`. User authorized future pushes when requested.
+- Git is installed at `C:\Users\Nikhil\AppData\Local\Programs\Git\cmd\git.exe`. Git Credential Manager authentication succeeded for `nikssalian-lgtm`. Run network Git operations as the Windows user; sandbox ownership may require the command-scoped option `-c safe.directory=C:/Users/Nikhil/company-website`. Commit identity is repository-local, using the GitHub username and noreply email.
 
 ## Latest session — 2026-10-05 (supersedes older notes below)
 
