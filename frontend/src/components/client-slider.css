@@ -1,0 +1,115 @@
+.client-showcase {
+  padding: clamp(32px, 5vw, 72px) 0;
+  border-block: 1px solid var(--color-border);
+  background:
+    radial-gradient(
+      ellipse at top left,
+      rgb(var(--brand-cyan-rgb) / 8%),
+      transparent 65%
+    ),
+    var(--color-surface);
+}
+.client-showcase-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+  padding-inline: var(--content-gutter, 24px);
+}
+.client-showcase h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -0.045em;
+  margin: 10px 0;
+}
+.client-showcase h2 em {
+  color: var(--color-accent-text);
+  font-style: normal;
+}
+.client-preview-note {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+.client-slider-controls {
+  display: flex;
+  gap: 8px;
+}
+.client-slider-controls button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+}
+.client-slider-controls button:hover {
+  border-color: var(--brand-cyan);
+  background: var(--color-surface-hover);
+}
+.client-logo-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-strong) transparent;
+  list-style: none;
+  margin: 0;
+  padding: 4px 2px 16px;
+}
+.client-motion-disabled [data-copy="true"] {
+  display: none;
+}
+.client-logo-card {
+  flex: 0 0 220px;
+  height: 140px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #fff;
+  color: #373435;
+  text-align: center;
+}
+.client-logo-card img {
+  width: 180px;
+  height: 80px;
+  object-fit: contain;
+}
+.client-logo-placeholder {
+  background: var(--color-surface-raised);
+  color: var(--color-muted);
+  border-style: dashed;
+}
+.client-logo-placeholder svg {
+  color: var(--color-accent-text);
+}
+.client-logo-placeholder small {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+.client-logo-track:focus-visible,
+.client-slider-controls button:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .client-showcase-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .client-logo-card {
+    flex-basis: 180px;
+  }
+  .client-logo-card img {
+    max-width: 140px;
+  }
+}

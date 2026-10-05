@@ -1,0 +1,47 @@
+/* Edge-to-edge public pages with a small, consistent reading inset. */
+.public-site {
+  --content-max: 100%;
+  --content-gutter: clamp(18px, 2vw, 32px);
+  width: 100%;
+  min-width: 0;
+}
+.public-site .site-header-inner,
+.public-site .footer-main,
+.public-site .footer-bottom,
+.public-site .home-hero-inner,
+.public-site .section-wrap,
+.public-site .process-inner,
+.public-site .contact-content,
+.public-site .journey-heading,
+.public-site .journey-layout {
+  max-width: none;
+}
+.public-site .site-header-inner,
+.public-site .footer-main,
+.public-site .footer-bottom,
+.public-site .home-hero-inner,
+.public-site .section-wrap,
+.public-site .contact-content {
+  padding-inline: var(--content-gutter);
+}
+.public-site main > section {
+  max-width: none;
+  margin-inline: 0;
+  border-inline: 0;
+}
+.public-site
+  main
+  > section:not(.home-hero):not(.client-showcase):not(.scroll-experience) {
+  padding-inline: var(--content-gutter);
+}
+.public-site .case-cover {
+  width: 100%;
+  border-inline: 0;
+}
+.public-site .case-story-shell {
+  width: 100%;
+  padding-inline: var(--content-gutter);
+}
+.public-site .client-showcase {
+  padding-inline: 0;
+}
